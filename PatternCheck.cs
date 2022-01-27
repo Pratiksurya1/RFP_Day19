@@ -34,7 +34,12 @@ namespace Regex_Demo
         {
             String Regex_Pattern = "^[9][1][7-9]{1}[0-9]{9}$";
             return Regex.IsMatch(Mnum, Regex_Pattern);
+        }
 
+        public bool Password(String Pass)
+        {
+            String Regex_Pattern = "^[A-Za-z]{8,}$";
+            return Regex.IsMatch(Pass, Regex_Pattern);
         }
     }
 }

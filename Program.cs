@@ -30,7 +30,7 @@ namespace Regex_Demo
                     break;
 
                 case 2:
-                    Console.WriteLine("Enter the First Name: ");
+                    Console.WriteLine("Enter the Last Name: ");
                     string LName = Console.ReadLine();
 
                     flag = patternCheck.FirstName(LName);
@@ -41,7 +41,7 @@ namespace Regex_Demo
                     break;
 
                 case 3:
-                    Console.WriteLine("Enter the First Name: ");
+                    Console.WriteLine("Enter the Mail ID : ");
                     string MailID = Console.ReadLine();
 
                     flag = patternCheck.FirstName(MailID);
@@ -52,7 +52,7 @@ namespace Regex_Demo
                     break;
 
                 case 4:
-                    Console.WriteLine("Enter the First Name: ");
+                    Console.WriteLine("Enter the Mo. Number : ");
                     string mNum = Console.ReadLine();
 
                     flag = patternCheck.FirstName(mNum);
@@ -61,6 +61,19 @@ namespace Regex_Demo
                     else
                         Console.WriteLine("InValid Name");
                     break;
+
+
+                case 5:
+                    Console.WriteLine("Enter the Password : ");
+                    string Pass = Console.ReadLine();
+
+                    flag = patternCheck.FirstName(Pass);
+                    if (flag)
+                        Console.WriteLine("Valid Name");
+                    else
+                        Console.WriteLine("InValid Name");
+                    break;
+
 
             }
 
