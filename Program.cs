@@ -14,7 +14,7 @@ namespace Regex_Demo
         PatternCheck patternCheck = new PatternCheck();
 
             Console.WriteLine("User Registration Validate using Regular Expression");
-            Console.WriteLine("Choose Option to Execute the Regex Program: \n UC 1. Validate First Name");
+            Console.WriteLine("Choose Option to Execute the Regex Program: \n UC 1. Validate First Name \n Uc2 validate Last Name \n Uc3 validate email \n Uc4 validate mo. number \n Uc5 validate Password rule 1 \n Uc6 validate pssword rule 2 \n Uc7 validate password rule 3");
             int choice = Convert.ToInt32(Console.ReadLine());
             switch (choice)
             {
@@ -79,6 +79,17 @@ namespace Regex_Demo
                     string PassCase2 = Console.ReadLine();
 
                     flag = patternCheck.FirstName(PassCase2);
+                    if (flag)
+                        Console.WriteLine("Valid ");
+                    else
+                        Console.WriteLine("InValid ");
+                    break;
+
+                case 7:
+                    Console.WriteLine("Enter the Password : ");
+                    string PassCase3 = Console.ReadLine();
+
+                    flag = patternCheck.FirstName(PassCase3);
                     if (flag)
                         Console.WriteLine("Valid ");
                     else
