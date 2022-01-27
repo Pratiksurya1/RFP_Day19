@@ -40,6 +40,17 @@ namespace Regex_Demo
                         Console.WriteLine("InValid Name");
                     break;
 
+                case 3:
+                    Console.WriteLine("Enter the First Name: ");
+                    string MailID = Console.ReadLine();
+
+                    flag = patternCheck.FirstName(MailID);
+                    if (flag)
+                        Console.WriteLine("Valid Name");
+                    else
+                        Console.WriteLine("InValid Name");
+                    break;
+
             }
 
 
