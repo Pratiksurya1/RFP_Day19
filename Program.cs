@@ -26,7 +26,7 @@ namespace Regex_Demo
                     if (flag)
                         Console.WriteLine("Valid Name");
                     else
-                        Console.WriteLine("InValid Name");
+                        Console.WriteLine("InValid Name"); 
                     break;
 
                 case 2:
