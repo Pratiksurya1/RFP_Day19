@@ -29,5 +29,12 @@ namespace Regex_Demo
             string Regex_Pattern = "^[A-Z0-9a-z]{1,}([.#$^][A-Za-z0-9]+)?[@][A-Za-z]{2,}[.][A-Za-z]{2,3}([.][a-zA-Z]{2})?$";
             return Regex.IsMatch(mailID, Regex_Pattern);
         }
+
+        public bool MNumber(String Mnum)
+        {
+            String Regex_Pattern = "^[9][1][7-9]{1}[0-9]{9}$";
+            return Regex.IsMatch(Mnum, Regex_Pattern);
+
+        }
     }
 }

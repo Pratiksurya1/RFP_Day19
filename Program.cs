@@ -51,6 +51,17 @@ namespace Regex_Demo
                         Console.WriteLine("InValid Name");
                     break;
 
+                case 4:
+                    Console.WriteLine("Enter the First Name: ");
+                    string mNum = Console.ReadLine();
+
+                    flag = patternCheck.FirstName(mNum);
+                    if (flag)
+                        Console.WriteLine("Valid Name");
+                    else
+                        Console.WriteLine("InValid Name");
+                    break;
+
             }
 
 
