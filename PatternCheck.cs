@@ -7,16 +7,27 @@ using System.Threading.Tasks;
 
 namespace Regex_Demo
 {
-  
+
     internal class PatternCheck
     {
-      //  public string Regex_Pattern = "^[A-Za-z]{3,}$";
-
         public bool FirstName(string FirstName)
         {
-             string Regex_Pattern = "^[A-Z]{1}[a-z]{3,}$";
+            string Regex_Pattern = "^[A-Z]{1}[a-z]{3,}$";
 
             return Regex.IsMatch(FirstName, Regex_Pattern);
+        }
+
+        public bool LastName(string LastName)
+        {
+            string Regex_Pattern = "^[A-Z][a-zA-z]{3,}$";
+
+            return Regex.IsMatch(LastName, Regex_Pattern);
+        }
+
+        public bool EMail(String mailID)
+        {
+            string Regex_Pattern = "^[A-Z0-9a-z]{1,}([.#$^][A-Za-z0-9]+)?[@][A-Za-z]{2,}[.][A-Za-z]{2,3}([.][a-zA-Z]{2})?$";
+            return Regex.IsMatch(mailID, Regex_Pattern);
         }
     }
 }

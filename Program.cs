@@ -8,9 +8,10 @@ namespace Regex_Demo
 {
     internal class Program
     {
+       static bool flag;
         public static void Main(String[] args)
         {
-            PatternCheck patternCheck = new PatternCheck();
+        PatternCheck patternCheck = new PatternCheck();
 
             Console.WriteLine("User Registration Validate using Regular Expression");
             Console.WriteLine("Choose Option to Execute the Regex Program: \n UC 1. Validate First Name");
@@ -19,10 +20,21 @@ namespace Regex_Demo
             {
                 case 1:
                     Console.WriteLine("Enter the First Name: ");
-                    string Name = Console.ReadLine();
+                    String FName = Console.ReadLine();
 
-                    bool value1 = patternCheck.FirstName(Name);
-                    if (value1)
+                    bool flag = patternCheck.FirstName(FName);
+                    if (flag)
+                        Console.WriteLine("Valid Name");
+                    else
+                        Console.WriteLine("InValid Name");
+                    break;
+
+                case 2:
+                    Console.WriteLine("Enter the First Name: ");
+                    string LName = Console.ReadLine();
+
+                    flag = patternCheck.FirstName(LName);
+                    if (flag)
                         Console.WriteLine("Valid Name");
                     else
                         Console.WriteLine("InValid Name");
