@@ -41,5 +41,11 @@ namespace Regex_Demo
             String Regex_Pattern = "^[A-Za-z]{8,}$";
             return Regex.IsMatch(Pass, Regex_Pattern);
         }
+
+        public bool PasswordCase2(String pass)
+        {
+            String Regax_Pattern= "^[A-Za-z]{8,}$";
+            return Regex.IsMatch(pass, Regax_Pattern);
+        }
     }
 }

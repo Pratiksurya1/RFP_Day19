@@ -46,9 +46,9 @@ namespace Regex_Demo
 
                     flag = patternCheck.FirstName(MailID);
                     if (flag)
-                        Console.WriteLine("Valid Name");
+                        Console.WriteLine("Valid ");
                     else
-                        Console.WriteLine("InValid Name");
+                        Console.WriteLine("InValid ");
                     break;
 
                 case 4:
@@ -57,9 +57,9 @@ namespace Regex_Demo
 
                     flag = patternCheck.FirstName(mNum);
                     if (flag)
-                        Console.WriteLine("Valid Name");
+                        Console.WriteLine("Valid ");
                     else
-                        Console.WriteLine("InValid Name");
+                        Console.WriteLine("InValid ");
                     break;
 
 
@@ -69,9 +69,20 @@ namespace Regex_Demo
 
                     flag = patternCheck.FirstName(Pass);
                     if (flag)
-                        Console.WriteLine("Valid Name");
+                        Console.WriteLine("Valid ");
                     else
-                        Console.WriteLine("InValid Name");
+                        Console.WriteLine("InValid ");
+                    break;
+
+                case 6:
+                    Console.WriteLine("Enter the Password : ");
+                    string PassCase2 = Console.ReadLine();
+
+                    flag = patternCheck.FirstName(PassCase2);
+                    if (flag)
+                        Console.WriteLine("Valid ");
+                    else
+                        Console.WriteLine("InValid ");
                     break;
 
 
