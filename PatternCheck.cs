@@ -14,7 +14,7 @@ namespace Regex_Demo
 
         public bool FirstName(string FirstName)
         {
-             string Regex_Pattern = "^[A-Za-z]{3,}$";
+             string Regex_Pattern = "^[A-Z]{1}[a-z]{3,}$";
 
             return Regex.IsMatch(FirstName, Regex_Pattern);
         }
