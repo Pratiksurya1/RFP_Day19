@@ -44,15 +44,20 @@ namespace Regex_Demo
 
         public bool PasswordCase2(String pass)
         {
-            String Regax_Pattern= "^[A-Za-z]{8,}$";
+            String Regax_Pattern = "^[A-Za-z]{8,}$";
             return Regex.IsMatch(pass, Regax_Pattern);
         }
 
         public bool PasswordCase3(String pass)
         {
-            String Regax_Pattern= "^[A-Za-z]{8,}$";
+            String Regax_Pattern = "^[A-Za-z]{8,}$";
+            return Regex.IsMatch(pass, Regax_Pattern);
+        }
+
+        public bool PasswordCase4(String pass)
+        {
+            String Regax_Pattern = "^[A-Za-z]{8,}$";
             return Regex.IsMatch(pass, Regax_Pattern);
         }
     }
 }
-"^[A-Za-z]{8,}$";
